@@ -131,4 +131,9 @@ def update_figure(WidthClass, GradeGroup, Thickness):
     return fig
 
 # Run app and display result
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=True,
+                   port=8050,
+                   host='0.0.0.0',
+                   dev_tools_ui=False,
+                   dev_tools_hot_reload=True)
